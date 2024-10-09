@@ -461,41 +461,33 @@ footer p {
     transform: translateY(-2px);
 }
 
-.E5-fiche {
+.competence-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: var(--box-shadow);
     background: var(--box-background);
-    margin: 20px auto;
-    padding: 20px;
-    box-shadow: var(--box-shadow);
     border-radius: 12px;
-    max-width: 800px;
-    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+}
+
+.competence-table th, .competence-table td {
+    padding: 12px 15px;
     text-align: center;
+    color: var(--text-color);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.E5-fiche:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
-}
-
-.E5-fiche h3 {
-    color: var(--primary-color);
-    margin-bottom: 20px;
-}
-
-.E5-fiche .download-button {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 20px;
-    font-size: 1em;
-    color: #fff;
+.competence-table th {
     background-color: var(--primary-color);
-    text-decoration: none;
-    border-radius: 8px;
-    box-shadow: var(--box-shadow);
-    transition: background-color 0.3s, transform 0.3s;
+    color: #fff;
+    font-weight: bold;
 }
 
-.E5-fiche .download-button:hover {
-    background-color: var(--hover-color);
-    transform: translateY(-2px);
+.competence-table tr:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.competence-table tbody tr:last-child td {
+    border-bottom: none;
 }
