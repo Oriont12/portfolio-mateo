@@ -502,3 +502,25 @@ footer p {
 .E4-container .download-button:active {
     transform: translateY(0);
 }
+
+.download-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: var(--primary-color);
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.download-button:hover {
+    background-color: var(--hover-color);
+    transform: translateY(-2px);
+}
+
+.download-button:active {
+    transform: translateY(0);
+}
