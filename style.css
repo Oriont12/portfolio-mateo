@@ -1,4 +1,8 @@
 /* Global Styles */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 :root {
     --primary-color: #ff6ec4;
     --secondary-color: #7873f5;
