@@ -539,44 +539,52 @@ footer p {
 
 .competence-table-container {
     margin: 0 auto;
-    background: var(--box-background);
-    border-radius: 12px;
-    box-shadow: var(--box-shadow);
-    padding: 0;
-    overflow-x: hidden; /* empêche le scroll */
+    overflow-x: auto; /* Active scroll seulement si nécessaire */
     width: 100%;
-    max-width: 100%;
+    box-shadow: var(--box-shadow);
+    border-radius: 12px;
+    background: var(--box-background);
 }
 
-/* Tableau */
 .competence-table {
     width: 100%;
+    min-width: 900px; /* Largeur minimale évite de casser la structure */
     border-collapse: collapse;
+    font-size: 0.9em;
     color: var(--text-color);
-    font-size: 0.85em;
-    table-layout: auto; /* auto pour permettre l'adaptation */
 }
 
-/* Cellules */
 .competence-table th,
 .competence-table td {
-    padding: 8px 5px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
     text-align: center;
     word-break: break-word;
-    white-space: normal;
 }
 
-/* En-têtes */
 .competence-table th {
     background-color: var(--primary-color);
-    color: #fff;
-    font-weight: bold;
-    font-size: 0.8em;
+    color: white;
+    font-size: 0.75em;
     text-transform: uppercase;
+    white-space: nowrap;
 }
 
-/* ✔ stylisé */
+/* Colonnes longues réduites en taille pour éviter le débordement */
+.competence-table th:nth-child(n+3),
+.competence-table td:nth-child(n+3) {
+    width: 100px;
+}
+
+.competence-table tr td[colspan] {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 10px;
+}
+
+/* Style des coches */
 .competence-table td.check::before {
     content: '✔';
     color: var(--primary-color);
@@ -584,26 +592,9 @@ footer p {
     font-size: 1.1em;
 }
 
-/* Ligne survolée */
-.competence-table tr:hover td {
-    background-color: rgba(255, 255, 255, 0.08);
-}
-
-/* Ligne de séparation de sections */
-.competence-table tr td[colspan] {
-    background-color: var(--primary-color);
-    color: white;
-    font-weight: bold;
-    text-align: left;
-    padding-left: 10px;
-    font-size: 0.9em;
-}
-
 /* Responsive */
 @media screen and (max-width: 768px) {
-    .competence-table th,
-    .competence-table td {
-        font-size: 0.7em;
-        padding: 6px 4px;
+    .competence-table {
+        font-size: 0.75em;
     }
 }
