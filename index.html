@@ -13,8 +13,9 @@
                 <li><a href="#about">À propos</a></li>
                 <li><a href="#skills">Compétences</a></li>
                 <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#experience">Expérience</a></li>
+                <li><a href="#projects">Projets</a></li>
                 <li><a href="#experience">Stage</a></li>
-                <li><a href="#competences">Tableau de compétences</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -35,8 +36,8 @@
             <button class="open-doc" data-file="CV PDF.pdf">Afficher mon CV</button>
         </div>
         <div class="E4-container">
-            <h3>Fiche E5</h3>
-            <button class="open-doc" data-file="Fiche E5.pdf">Afficher la fiche</button>
+            <h3>Fiche E4</h3>
+            <button class="open-doc" data-file="Evaluation E4.pdf">Afficher la fiche</button>
         </div>
     </section>
 
@@ -60,18 +61,32 @@
         <h2>Certifications</h2>
         <div class="certification">
             <img src="téléchargé.jpg" alt="Certification 1" class="certification-image">
-            <h3>Certification SecNum académie</h3>
+            <h3>Certification 1</h3>
             <button class="open-doc" data-file="mJ1wm9JzPpJgvIZnzSraM3lIYdC9X1rcZjY7s7sr2fCbET0S7njS8HLwhVcr_174435_20082024.pdf">Afficher la certification</button>
         </div>
         <div class="certification">
             <img src="fortinet-certified-fundamentals-cybersecurity.png" alt="Certification 2" class="certification-image">
-            <h3>Certification Fortinet</h3>
+            <h3>Certification 2</h3>
             <button class="open-doc" data-file="Fortinet_Certified_Fundamentals_in_Cybersecurity.pdf">Afficher la certification</button>
         </div>
         <div class="certification">
             <img src="image.png" alt="Certification 3" class="certification-image">
-            <h3>Certification strormshield</h3>
+            <h3>Certification 2</h3>
             <button class="open-doc" data-file="MONTEIRO_Mateo_99V43CSNA60130.pdf">Afficher la certification</button>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projets</h2>
+        <div class="project">
+            <h3>FIGFACTOR</h3>
+            <p>Projet de classe de BTS 1.</p>
+            <button class="open-doc" data-file="FIGFACTOR.pdf">Afficher le projet</button>
+        </div>
+        <div class="project">
+            <h3>TP GLPI</h3>
+            <p>Projet de classe de BTS 2.</p>
+            <button class="open-doc" data-file="TP GLPI.pdf">Afficher le projet</button>
         </div>
     </section>
 
@@ -88,40 +103,11 @@
             <h3>Stage 2 - Region Auvergne Rhone alpes</h3>
             <p><strong>Période :</strong> Mars 2025 - Avril 2025</p>
             <p><strong>Lieu :</strong>  Lyon - Hotel region</p>
-            <p><strong>Missions :</strong> Installation configuration du logiciel Taiga ainsi que la création de la documentation technique et utilisateur.</p>
+            <p><strong>Missions :</strong> Virtualisation avec Proxmox, mise en place de sauvegardes automatisées, supervision Zabbix, documentation technique.</p>
             <button class="open-doc" data-file="">Afficher le rapport</button>
         </div>
     </section>
-
-    <section id="competences">
-        <h2>Tableau de compétences</h2>
-        <div class="competence-table-container">
-            <table class="competence-table">
-                <thead>
-                    <tr>
-                        <th>Réalisation</th>
-                        <th>Période</th>
-                        <th>Gérer le patrimoine informatique</th>
-                        <th>Répondre aux incidents</th>
-                        <th>Développer la présence en ligne</th>
-                        <th>Travailler en mode projet</th>
-                        <th>Mettre à disposition un service</th>
-                        <th>Organiser son développement professionnel</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td>GLPI - installation</td><td>03/09/24 - 17/09/24</td><td>✔</td><td></td><td></td><td></td><td>✔</td><td></td></tr>
-                    <tr><td>Site entreprise fictive</td><td>04/03/24 - 17/09/24</td><td></td><td></td><td>✔</td><td></td><td></td><td></td></tr>
-                    <tr><td>Veille abus matériel</td><td>01/10/24 - 05/11/24</td><td></td><td></td><td></td><td></td><td></td><td>✔</td></tr>
-                    <tr><td>Projet Figfactor</td><td>19/01/24 - 28/06/24</td><td></td><td></td><td></td><td>✔</td><td></td><td></td></tr>
-                    <tr><td>Chatbot IA</td><td>18/06/24 - 19/07/24</td><td></td><td></td><td></td><td>✔</td><td></td><td></td></tr>
-                    <tr><td>Dépannage Campus</td><td>17/06/24 - 19/07/24</td><td>✔</td><td>✔</td><td></td><td></td><td></td><td></td></tr>
-                    <tr><td>Inventaire équipements</td><td>01/07/24 - 05/07/24</td><td>✔</td><td></td><td></td><td></td><td></td><td></td></tr>
-                    <tr><td>Projet open source DSI</td><td>10/03/25 - 25/03/25</td><td></td><td></td><td></td><td>✔</td><td></td><td></td></tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
+    
 
     <section id="contact">
         <h2>Contact</h2>
@@ -137,6 +123,7 @@
         <p>&copy; 2024 Matéo Monteiro. Tous droits réservés.</p>
     </footer>
 
+    <!-- Modale pour afficher les documents -->
     <div id="modal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
