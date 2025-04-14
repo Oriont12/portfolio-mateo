@@ -612,10 +612,6 @@ footer p {
 }
 
 
-
-
-
-
 .doc-link {
     color: var(--primary-color);
     font-weight: bold;
@@ -627,3 +623,17 @@ footer p {
     text-decoration: underline;
     color: var(--hover-color);
 }
+
+a,
+a:visited,
+a:active {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: var(--hover-color);
+    text-decoration: underline;
+}
+
