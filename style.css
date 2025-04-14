@@ -637,3 +637,17 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Style des liens de documents dans le tableau */
+.doc-link,
+.doc-link:visited,
+.doc-link:active {
+    color: var(--primary-color);
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.doc-link:hover {
+    color: var(--hover-color);
+    text-decoration: underline;
+}
