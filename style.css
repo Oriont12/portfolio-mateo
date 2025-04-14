@@ -610,3 +610,20 @@ footer p {
         font-size: 0.75em;
     }
 }
+
+
+
+
+
+
+.doc-link {
+    color: var(--primary-color);
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.doc-link:hover {
+    text-decoration: underline;
+    color: var(--hover-color);
+}
