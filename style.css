@@ -241,3 +241,15 @@ footer {
     color: var(--hover-color);
     text-decoration: underline;
 }
+
+.about-image {
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 20px;
+    box-shadow: var(--box-shadow);
+}
+
+#about {
+    padding-top: 80px;
+}
