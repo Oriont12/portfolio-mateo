@@ -44,7 +44,7 @@ body::before {
 }
 
 header {
-    padding: 180px 20px 20px; /* augmentée pour laisser place au nav sticky */
+    padding: 120px 20px 20px; /* augmentée pour laisser place au nav sticky */
     text-align: center;
     color: #fff;
 }
