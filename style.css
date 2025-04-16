@@ -112,16 +112,18 @@ section h2 {
     margin-bottom: 40px;
 }
 
-.about-content {
+#about {
+    padding-top: 80px;
+}
+
+.about-content, .cv-container, .E4-container {
     background: var(--box-background);
     padding: 20px;
-    margin: 0 auto;
+    margin: 20px auto;
     border-radius: 12px;
     box-shadow: var(--box-shadow);
     max-width: 800px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
 }
 
 .about-image {
@@ -130,10 +132,6 @@ section h2 {
     border-radius: 50%;
     margin-top: 20px;
     box-shadow: var(--box-shadow);
-}
-
-#about {
-    padding-top: 80px;
 }
 
 .skill, .certification, .project, .loisir-item, .contact-info {
